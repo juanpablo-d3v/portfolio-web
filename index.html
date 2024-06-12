@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header>
+    <header class="banner">
         <nav>
             <img src="assets/img/logo-white.svg" alt="Logo">
             <ul>
@@ -37,22 +37,171 @@
         </article>
     </header>
     <main>
-        <section>
+        <section class="experience">
+            <h1>Experience</h1>
+            <details open>
+                <summary>IT Analyst - Tata Consultancy Services (2023 - Currently)</summary>
+                <article>
+                    <img src="assets/img/experience/tcs-logo.png" alt="tcs logo">
+                    <div class="text-detail">
+                        <p>Working in frontend project with Angular framework and library architecture using Angular
+                            Material as design system, manage core features of Angular (modules, routing, services,
+                            directives, etc..).</p>
+                        <p>Determine the estimation of effort for stories and using agile methodology with Scrum and Jira
+                            tool.</p>
+                        <p>Learning to use new tools like AG Grid and concepts of model business of client.</p>
+                    </div>
+                </article>
+                <footer>
+                    <span>Javascript</span>
+                    <span>Angular</span>
+                    <span>Git</span>
+                    <span>English Communication</span>
+                </footer>
+            </details>
+            <details>
+                <summary>Sr Developer NTT Data (2022 - 2023)</summary>
+                <article>
+                    <img src="assets/img/experience/ntt-data-logo.png" alt="tcs logo">
+                    <div class="text-detail">
+                        <p>Worked with Angular framework in different projects, managed core concepts of the framework
+                            (modules, lazy-load, routing, services, interceptor, etc...). I developed different modules and
+                            features for different companies like Iberdrola and Brilla.</p>
+                        <p>I tested code with Karma & Jasmine stack and apply quality test based on client requirements with
+                            SonarQube and Jenkins </p>
+                        <p>Working with multidisciplinary team and organize activities with agile methodology Scrum and Jira
+                            tool</p>
+                    </div>
+                </article>
+                <footer>
+                    <span>Javascript</span>
+                    <span>Angular</span>
+                    <span>Git</span>
+                    <span>Unit Test</span>
+                </footer>
+            </details>
+            <details>
+                <summary>Manager - Poder Judicial del Estado de Colima (2014 - 2022)</summary>
+                <article>
+                    <img src="assets/img/experience/stj-logo.png" alt="tcs logo">
+                    <div class="text-detail">
+                        <p>I started working as medium fullstack developer with Codeigniter framework I created several
+                            applications and services to improve legal process with impact in improve attention time, effort
+                            and reduce cost.</p>
+                        <p>After some years working in the institution now like Manager I leaded the migration to an
+                            architecture based on frontend clients and backend API services to integrate all separated
+                            projects in a Intranet, improved the process to create and maintain projects</p>
+                        <p>The department published a new online service for citizen and lawyers to start a digital lawsuit
+                            based on digital sign of documents, improved time, efforts and save resources for both sides.
+                        </p>
+                    </div>
+                </article>
+                <footer>
+                    <span>CodeIgniter</span>
+                    <span>Slim Framework</span>
+                    <span>MySQL</span>
+                    <span>Angular</span>
+                    <span>Jquery</span>
+                    <span>HTML/CSS</span>
+                    <span>Bootstrap</span>
+                    <span>Ant-Design</span>
+                    <span>Linux Admin (basic)</span>
+                    <span>Azure(basic)</span>
+                </footer>
+            </details>
+            <details>
+                <summary>Medium Software Engineer - Inteliglobe (2013 - 2014)</summary>
+                <article>
+                    <img src="assets/img/experience/inteliglobe-logo.jpg" alt="tcs logo">
+                    <div class="text-detail">
+                        <p>I worked with Java EE stack to develop new modules, the main purpose is visualize the result of
+                            CENEVAL test that was previously processed by the department of Optical Process.</p>
+                        <p>Activities were organized with Kanban methodology and based on documents with the descriptions of
+                            the feature and his dependencies and acceptance criteria.</p>
+                    </div>
+                </article>
+                <footer>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </footer>
+            </details>
+            <details>
+                <summary>AIMSI - Jr. Software Engineer (2011 - 2013)</summary>
+                <article>
+                    <img src="assets/img/experience/cluster-tic.png" alt="tcs logo">
+                    <div class="text-detail">
+                        <p>My first formal experience like developer, I worked with a project for CENEVAL federal
+                            institution to develop multiple grids in Java EE stack</p>
+                        <p>The grids consist in show information of different assessments, status and show incidents to
+                            verify and resolve based on actions required by manual revision.</p>
+                        <p>I achieve a certification as Web Developer (basic) with Java EE stack.</p>
+                    </div>
+                </article>
+                <footer>
+                    <span>Java EE</span>
+                    <span>JPA</span>
+                    <span>HTML/CSS</span>
+                </footer>
+            </details>
+        </section>
+        <section class="projects">
             <h1>Projects</h1>
             <article>
-                <h2>Project 1</h2>
-                <p>Insert project 1 description here.</p>
+                <header>
+                    <h1>Fresnal Comala</h1>
+                </header>
+                <img src="img/projects/fresnal.png" width="100%" alt="Portfolio Item">
+                <p>Landing page and reservation system to book a cabin, the system apply particular business logic for
+                    reservation process, e-mail notification and an admin system to manage the different clients and
+                    reservations</p>
+                <p>It's a fullstack MCV project and relational database, the design it's a third party template
+                    customized to the client requirements.</p>
+                <footer>
+                    <small>HTML/CSS/JS</small>
+                    <small>Jquery</small>
+                    <small>PHP</small>
+                    <small>MySQL</small>
+                    <small>Bootstrap</small>
+                </footer>
             </article>
             <article>
-                <h2>Project 2</h2>
-                <p>Insert project 2 description here.</p>
+                <header>
+                    <h1>Tribunal Electrónico</h1>
+                </header>
+                <img src="assets/img/projects/fresnal.png" alt="Portfolio Item">
+                <p>It's a public service launched for citizen, lawyers and workers from public institution, bases in
+                    frontend clients and API services for backend.</p>
+                <p>The system can create new lawsuits online with the use of a digital sign by citizen or lawyers,
+                    notifying to the institution functionary to follow the legal process, all process using digital sign
+                    and creating an totally digital lawsuit</p>
+                <p>The citizen or lawyer have an inbox to receive legal notification by institution, also this system
+                    save time, resources and offer more transparency inside the institution.</p>
+                <footer>
+                    <small>HTML/CSS/JS</small>
+                    <small>Angular</small>
+                    <small>PHP</small>
+                    <small>MySQL</small>
+                    <small>Ant-Design</small>
+                </footer>
             </article>
-            <!-- Add more projects as needed -->
-        </section>
-
-        <section>
-            <h1>Contact</h1>
-            <p>Insert your contact information here.</p>
+            <article>
+                <header>
+                    <h1>Ocean Pool</h1>
+                </header>
+                <img src="assets/img/projects/fresnal.png" alt="Portfolio Item">
+                <p>Simple landing page to show information of the local business and administration of it domain,
+                    hosting and Google Workspace services.</p>
+                <footer><small>HTML/CSS/JS</small></footer>
+            </article>
+            <article>
+                <header>
+                    <h1>Portfolio</h1>
+                </header>
+                <img src="assets/img/projects/fresnal.png" alt="Portfolio Item">
+                <p>Description item</p>
+                <footer><small>Techs: HTML CSS JS</small></footer>
+            </article>
         </section>
     </main>
     <!-- Your content goes here -->
