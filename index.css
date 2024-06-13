@@ -59,3 +59,31 @@ body {
     background: #f9f9f9;
     padding: 20px;
 }
+
+.experience details {
+    width: 100%;
+    border: 1px solid #80808044;
+    margin: 6px 0;
+    border-radius: 0.25rem;
+    padding: 6px;
+    box-sizing: border-box;
+}
+
+.experience details summary {
+    font-weight: bold;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.experience details article {
+    display: flex;
+    align-items: center;
+}
+
+.experience details article img {
+    width: 30%;
+}
+
+.experience details footer {
+    text-align: center;
+}
