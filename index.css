@@ -87,3 +87,26 @@ body {
 .experience details footer {
     text-align: center;
 }
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.grid-projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    margin: auto;
+}
+
+.grid-projects article {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.grid-projects article img {
+    max-width: 100%;
+    aspect-ratio: 16 / 9;
+}
