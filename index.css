@@ -17,6 +17,7 @@ body {
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .banner nav img {
@@ -24,6 +25,8 @@ body {
 }
 
 .banner nav ul {
+    display: flex;
+    align-items: center;
     height: 32px;
     margin: 0;
     padding: 0;
@@ -31,12 +34,13 @@ body {
 
 .banner nav li {
     display: inline;
-    margin-right: 10px;
+    margin-right: 32px;
     text-decoration: none; /* Add this line to remove link style */
 }
 
 .banner nav li a {
     font-size: large;
+    font-weight: bold;
     color: white;
     text-decoration: none;
 }
@@ -51,27 +55,39 @@ body {
     justify-content: center;
 }
 
+.banner-emphasis {
+    font-size: 3rem;
+}
+
 .experience {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background: #f9f9f9;
     padding: 24px;
 }
 
 .experience details {
     width: 100%;
-    border: 1px solid #e4e3e688;
+    border: 1px solid #e4e3e6;
     margin: 6px 0;
     border-radius: 0.25rem;
     padding: 6px;
     box-sizing: border-box;
+    animation-name: close-detail;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+}
+
+.experience details[open] {
+    animation-name: open-detail;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
 }
 
 .experience details summary {
     font-weight: bold;
-    padding: 4px;
+    padding: 8px;
     cursor: pointer;
 }
 
@@ -127,4 +143,26 @@ body {
 .main-footer {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+@keyframes open-detail {
+    from {
+        border: 1px solid #e4e3e6;
+    }
+
+    to {
+        border: 1px solid #e4e3e600;
+        box-shadow: 0 6px 10px rgba(0,0,0,.08);
+    }
+}
+
+@keyframes close-detail {
+    from {
+        border: 1px solid #e4e3e600;
+        box-shadow: 0 6px 10px rgba(0,0,0,.08);
+    }
+
+    to {
+        border: 1px solid #e4e3e6;
+    }
 }
