@@ -10,33 +10,38 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <header class="banner">
-        <nav>
-            <img src="assets/img/logo-white.svg" alt="Logo">
-            <ul>
-                <li><a href="#about">About</a></li>
+    <header>
+        <div>
+            <img class="logo" src="assets/img/logo-white.svg" alt="Logo">
+        </div>
+        <button class="mobile-nav-toggle" aria-controls="primary-navigation" aria-expanded="false"><span class="sr-only">Menu</span></button>
+        <nav class="main-nav">
+            <ul id="primary-navigation" data-visible="false">
+                <li class="active"><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        <article>
-            <h1><span class="banner-emphasis">+10</span> years in IT industry</h1>
-            <p>developing enterprise solutions, continuos learning and (pending idea).</p>
-            <aside class="external-links">
-                <nav>
-                    <a href="https://github.com/jpsolorzanom" title="Download CV"><img src="assets/img/download.svg"
-                            alt="Download icon" width="24"></a>
-                    <a href="https://github.com/jpsolorzanom" title="Github Projects"><img src="assets/img/github.svg"
-                            alt="Github icon" width="24"></a>
-                    <a href="https://www.hackerrank.com/profile/jpsolorzanom" title="HackerRank Profile"><img
-                            src="assets/img/hackerrank.svg" alt="Hackerrank icon" width="24"></a>
-                    <a href="https://www.linkedin.com/in/juan-pablo-solorzano/" title="LinkedIn Profile"><img
-                            src="assets/img/linkedin.svg" alt="LinkedIn icon" width="24"></a>
-                </nav>
-            </aside>
-        </article>
     </header>
     <main>
+        <section class="banner">
+            <article>
+                <h1><span class="banner-emphasis">+10</span> years in IT industry</h1>
+                <p>developing enterprise solutions, continuos learning and (pending idea).</p>
+                <aside class="external-links">
+                    <nav>
+                        <a href="https://github.com/jpsolorzanom" title="Download CV"><img src="assets/img/download.svg"
+                                alt="Download icon" width="24"></a>
+                        <a href="https://github.com/jpsolorzanom" title="Github Projects"><img src="assets/img/github.svg"
+                                alt="Github icon" width="24"></a>
+                        <a href="https://www.hackerrank.com/profile/jpsolorzanom" title="HackerRank Profile"><img
+                                src="assets/img/hackerrank.svg" alt="Hackerrank icon" width="24"></a>
+                        <a href="https://www.linkedin.com/in/juan-pablo-solorzano/" title="LinkedIn Profile"><img
+                                src="assets/img/linkedin.svg" alt="LinkedIn icon" width="24"></a>
+                    </nav>
+                </aside>
+            </article>
+        </section>
         <section class="experience">
             <h1>Experience</h1>
             <details open name="experience-item">
@@ -220,13 +225,13 @@
             </form>
         </section>
         <section class="social-media">
-            <h1>Last posts</h1>
+            <blockquote class="twitter-tweet"><p lang="es" dir="ltr">Este fin de semana pasado, toco retomar las salidas en grupo de ciclismo de montaña 🚵‍♂️ con mis compañeros de Supremo MTB.<a href="https://t.co/l8lknHZGHE">https://t.co/l8lknHZGHE</a></p>&mdash; JP (@jpsolorzanom) <a href="https://twitter.com/jpsolorzanom/status/1131067518112608256?ref_src=twsrc%5Etfw">May 22, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
         </section>
-        <section class="donates">
+        <section class="technologies">
             <p>Working with</p>
             <p>Community content flows with coffee <button>Buy me a coffe</button></p>
         </section>
     </footer>
-    <script src="script.js"></script>
+    <script src="index.js"></script>
 </body>
 </html>
