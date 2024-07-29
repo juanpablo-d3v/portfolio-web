@@ -1,3 +1,16 @@
+/* custom properties */
+:root {
+    --main-font: system-ui, sans-serif;
+    --title-size: 3rem;
+    --title2-size: 2.75rem;
+    --title3-size: 2.5rem;
+    --title4-size: 1.75rem;
+    --title5-size: 1.5rem;
+    --title6-size: 1.25rem;
+    --text-size: 1rem;
+    /* --primary-color:  */
+}
+/* end custom properties */
 /* Normalize CSS */
 html {
     box-sizing: border-box;
@@ -10,10 +23,11 @@ html {
 }
 
 body {
+    font-family: var(--main-font);
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
     overflow-x: hidden;
+    color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -81,15 +95,70 @@ button {
 }
 /* End Normalize CSS */
 
+/* Custom styles */
+.title {
+    font-size: var(--title-size);
+    padding-block: 0.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    position: relative;
+    background: white;
+    width: fit-content;
+}
+
+.title-border::before{
+    content: "";
+    background: linear-gradient(to right, red, purple);
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    z-index: -1;
+    margin-bottom: -0.25rem;
+}
+
+.title2 {
+    font-size: var(--title2-size);
+}
+
+.title3 {
+    font-size: var(--title3-size);
+}
+
+.title4 {
+    font-size: var(--title4-size);
+}
+
+.title5 {
+    font-size: var(--title5-size);
+}
+
+.title6 {
+    font-size: var(--title6-size);
+}
+
+p {
+    font-size: var(--text-size);
+    line-height: 1.5;
+    margin: 0.5rem;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+/* End Custom styles */
+
+/* Header and Nav styles */
 header {
     width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
 }
 
 .logo {
     margin: 2rem;
+    width: 80px;
 }
 
 .mobile-nav-toggle {
@@ -166,23 +235,53 @@ header {
         padding-inline: clamp(3rem, 8vw, 10rem);
     }
 }
+/* Header and Nav styles */
+
+/* Banner styles */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/software-developer.jpg') no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
 
 .banner article {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/img/software-developer.jpg') no-repeat center center fixed;
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
+    padding: 2rem;
+}
+
+.banner article h1 {
+    font-weight: 800;
+    font-size: 2rem;
 }
 
 .banner-emphasis {
+    font-weight: 800;
     font-size: 3rem;
 }
 
+.banner article p {
+    font-size: 1.5rem;
+}
+
+.banner article aside {
+    margin-top: 2rem;
+}
+
+.external-links nav {
+    display: flex;
+    gap: 1.5rem;
+}
+/* Banner styles */
+
 .experience {
-    height: 100vh;
+    color: black;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -190,11 +289,10 @@ header {
 }
 
 .experience details {
-    width: 100%;
     border: 1px solid #e4e3e6;
     margin: 6px 0;
     border-radius: 0.25rem;
-    padding: 6px;
+    padding: 2rem;
     box-sizing: border-box;
     animation-name: close-detail;
     animation-duration: 0.5s;
@@ -209,13 +307,14 @@ header {
 
 .experience details summary {
     font-weight: bold;
-    padding: 8px;
+    padding: 0.5rem;
     cursor: pointer;
 }
 
 .experience details article {
     display: flex;
     align-items: center;
+    gap: 1rem;
 }
 
 .experience details article img {
@@ -224,6 +323,7 @@ header {
 
 .experience details footer {
     text-align: center;
+    margin-top: 1rem;
 }
 
 .projects {
